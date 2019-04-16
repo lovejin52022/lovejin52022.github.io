@@ -320,7 +320,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">2</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">1</span></a>
 
   </li>
         
@@ -414,7 +414,7 @@
         
           
         
-        嗯..! 目前共计 2 篇日志。 继续努力。
+        嗯..! 目前共计 1 篇日志。 继续努力。
       </span>
       
 
@@ -439,47 +439,7 @@
 
       <h2 class="post-title">
         
-          <a class="post-title-link" href="/2019/04/16/a1/" itemprop="url">
-            
-              <span itemprop="name">a1</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-16T10:40:17+08:00" content="2019-04-16">
-          04-16
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2018/04/16/hello-world/" itemprop="url">
+          <a class="post-title-link" href="/2019/04/16/mac-hexo/" itemprop="url">
             
               <span itemprop="name">Mac + Hexo + next主题个人博客搭建</span>
             
@@ -488,7 +448,7 @@
       </h2>
 
       <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-04-16T10:40:00+08:00" content="2018-04-16">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-04-16T10:40:00+08:00" content="2019-04-16">
           04-16
         </time>
       </div>
@@ -549,7 +509,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">1</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -793,6 +753,74 @@
 
 
   
+  
+  <script>
+    
+    function showTime(Counter) {
+      var entries = [];
+      var $visitors = $('.leancloud_visitors');
+
+      $visitors.each(function() {
+        entries.push( $(this).attr('id').trim() );
+      });
+
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url: { '$in': entries } }) })
+        .done(function({ results }) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.url;
+            var time = item.time;
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for (var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if (countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function ({ responseJSON }) {
+          console.log('LeanCloud Counter Error: ' + responseJSON.code + ' ' + responseJSON.error);
+        });
+    }
+    
+
+    $(function() {
+      $.get('https://app-router.leancloud.cn/2/route?appId=' + 'UU4VRulI5u3gOK08vBCMuV81-gzGzoHsz')
+        .done(function({ api_server }) {
+          var Counter = function(method, url, data) {
+            return $.ajax({
+              method: method,
+              url: 'https://' + api_server + '/1.1' + url,
+              headers: {
+                'X-LC-Id': 'UU4VRulI5u3gOK08vBCMuV81-gzGzoHsz',
+                'X-LC-Key': 'qOKlnoO72hgBELcVjxHRyXWr',
+                'Content-Type': 'application/json',
+              },
+              data: data
+            });
+          };
+          
+            if ($('.post-title-link').length >= 1) {
+              showTime(Counter);
+            }
+          
+        });
+    });
+  </script>
+
+
 
   
 
