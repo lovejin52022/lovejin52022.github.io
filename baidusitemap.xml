@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://lovejin52022.github.io/2019/04/17/Scrapy-Newspaper-mongodb/</loc>
+    <lastmod>2019-04-17</lastmod>
+  </url>  <url>
+    <loc>https://lovejin52022.github.io/2019/04/17/%E4%BD%BF%E7%94%A8pyenv%E7%AE%A1%E7%90%86python%E7%8E%AF%E5%A2%83/</loc>
+    <lastmod>2019-04-17</lastmod>
+  </url>  <url>
     <loc>https://lovejin52022.github.io/2019/04/16/mac-hexo/</loc>
-    <lastmod>2019-04-16</lastmod>
+    <lastmod>2019-04-17</lastmod>
   </url>
 </urlset>

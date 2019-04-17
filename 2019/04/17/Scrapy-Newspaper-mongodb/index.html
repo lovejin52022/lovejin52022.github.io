@@ -133,13 +133,18 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Mr 曾 Blog">
-<meta property="og:url" content="https://lovejin52022.github.io/index.html">
+  <meta name="description" content="环境配置安装mongodb本人比较喜欢使用docker进行搭建本地环境，所以这边我就直接介绍docker搭建mongodb  查看是否已安装docker和docker-compose，如下 1234$ docker -vDocker version 18.09.1, build 4c52b90$ docker-compose -vdocker-compose version 1.23.2, bui">
+<meta name="keywords" content="python,scrapy">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Scrapy + Newspaper + mongodb 进行爬取新闻网站">
+<meta property="og:url" content="https://lovejin52022.github.io/2019/04/17/Scrapy-Newspaper-mongodb/index.html">
 <meta property="og:site_name" content="Mr 曾 Blog">
+<meta property="og:description" content="环境配置安装mongodb本人比较喜欢使用docker进行搭建本地环境，所以这边我就直接介绍docker搭建mongodb  查看是否已安装docker和docker-compose，如下 1234$ docker -vDocker version 18.09.1, build 4c52b90$ docker-compose -vdocker-compose version 1.23.2, bui">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-04-17T07:56:37.453Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Mr 曾 Blog">
+<meta name="twitter:title" content="Scrapy + Newspaper + mongodb 进行爬取新闻网站">
+<meta name="twitter:description" content="环境配置安装mongodb本人比较喜欢使用docker进行搭建本地环境，所以这边我就直接介绍docker搭建mongodb  查看是否已安装docker和docker-compose，如下 1234$ docker -vDocker version 18.09.1, build 4c52b90$ docker-compose -vdocker-compose version 1.23.2, bui">
 
 
 
@@ -147,7 +152,7 @@
 
   
   
-  <link rel="canonical" href="https://lovejin52022.github.io/">
+  <link rel="canonical" href="https://lovejin52022.github.io/2019/04/17/Scrapy-Newspaper-mongodb/">
 
 
 
@@ -157,7 +162,7 @@
   };
 </script>
 
-  <title>Mr 曾 Blog</title>
+  <title>Scrapy + Newspaper + mongodb 进行爬取新闻网站 | Mr 曾 Blog</title>
   
 
 
@@ -215,8 +220,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -254,7 +258,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
 
     
     
@@ -365,249 +369,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://lovejin52022.github.io/2019/04/17/使用pyenv管理python环境/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="jin zeng">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mr 曾 Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/04/17/使用pyenv管理python环境/" class="post-title-link" itemprop="url">使用pyenv管理python环境</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-04-17 12:52:00" itemprop="dateCreated datePublished" datetime="2019-04-17T12:52:00+08:00">2019-04-17</time>
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/编程语言/" itemprop="url" rel="index"><span itemprop="name">编程语言</span></a></span>
-
-                
-                
-                  ，
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/编程语言/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/04/17/使用pyenv管理python环境/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/04/17/使用pyenv管理python环境/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-            <span id="/2019/04/17/使用pyenv管理python环境/" class="leancloud_visitors" data-flag-title="使用pyenv管理python环境">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读次数：</span>
-              
-                <span class="leancloud-visitors-count"></span>
-            </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h4 id="安装pyenv"><a href="#安装pyenv" class="headerlink" title="安装pyenv"></a>安装pyenv</h4><h5 id="Ubuntu-安装"><a href="#Ubuntu-安装" class="headerlink" title="Ubuntu 安装"></a>Ubuntu 安装</h5><ol>
-<li><p>若没安装<code>git</code>则需要先安装</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install git</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>克隆<code>pyenv</code>仓库</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/yyuu/pyenv.git ~/.pyenv</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>将<code>PYENV_ROOT</code>和<code>pyenv init</code>加入<code>bash</code>的<code>~/.bashrc</code>（或zsh的~/.zshrc）</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">'export PATH=~/.pyenv/bin:$PATH'</span> &gt;&gt; ~/.bashrc</span><br><span class="line"><span class="built_in">echo</span> <span class="string">'export PYENV_ROOT=~/.pyenv'</span> &gt;&gt; ~/.bashrc</span><br><span class="line"><span class="built_in">echo</span> <span class="string">'eval "$(pyenv init -)"'</span> &gt;&gt; ~/.bashrc</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>或者使用<code>vim</code>编辑<code>~/.bashrc</code>（或zsh的~/.zshrc），在文件最后加上<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> PATH=~/.pyenv/bin:<span class="variable">$PATH</span></span><br><span class="line"><span class="built_in">export</span> PYENV_ROOT=~/.pyenv</span><br><span class="line"><span class="built_in">eval</span> <span class="string">"<span class="variable">$(pyenv init -)</span>"</span></span><br></pre></td></tr></table></figure></p>
-<ol start="4">
-<li>激活<code>pyenv</code><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> ~/.bashrc（或zsh的`~/.zshrc`）</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<h5 id="MAC-安装"><a href="#MAC-安装" class="headerlink" title="MAC 安装"></a>MAC 安装</h5><ol>
-<li><p>更新<code>brew</code></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew update</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>使用<code>brew</code>安装<code>pyenv</code></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install pyenv</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>配置环境变量</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">'eval "$(pyenv init -)"'</span> &gt;&gt; ~/.zshrc</span><br><span class="line"><span class="built_in">echo</span> <span class="string">'eval "$(pyenv virtualenv-init -)"'</span> &gt;&gt; ~/.zshrc</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>激活环境</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> ~/.zshrc</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<h4 id="常用操作"><a href="#常用操作" class="headerlink" title="常用操作"></a>常用操作</h4><ol>
-<li><p>列出可安装版本</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyenv install --list</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装对应的<code>python</code>版本</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyenv install &lt;version&gt;</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>这边安装时有遇到错误，如遇到错误可执行以下语句进行安装<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CFLAGS=<span class="string">"-I<span class="variable">$(xcrun --show-sdk-path)</span>/usr/include"</span> pyenv install -v &lt;version&gt;</span><br></pre></td></tr></table></figure></p>
-<ol start="3">
-<li><p>显示当前使用的<code>python</code>版本</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyenv versions</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>设置默认<code>Python</code>版本</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyenv global &lt;version&gt;</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<h4 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">pyenv install --list <span class="comment"># 列出可安装版本</span></span><br><span class="line">pyenv install &lt;version&gt; <span class="comment"># 安装对应版本</span></span><br><span class="line">pyenv install -v &lt;version&gt; <span class="comment"># 安装对应版本，若发生错误，可以显示详细的错误信息</span></span><br><span class="line">pyenv versions <span class="comment"># 显示当前使用的python版本</span></span><br><span class="line">pyenv <span class="built_in">which</span> python <span class="comment"># 显示当前python安装路径</span></span><br><span class="line">pyenv global &lt;version&gt; <span class="comment"># 设置默认Python版本</span></span><br><span class="line">pyenv <span class="built_in">local</span> &lt;version&gt; <span class="comment"># 当前路径创建一个.python-version, 以后进入这个目录自动切换为该版本</span></span><br><span class="line">pyenv shell &lt;version&gt; <span class="comment"># 当前shell的session中启用某版本，优先级高于global 及 local</span></span><br></pre></td></tr></table></figure>
-<h4 id="PyCharm指定对应的python版本"><a href="#PyCharm指定对应的python版本" class="headerlink" title="PyCharm指定对应的python版本"></a>PyCharm指定对应的python版本</h4><ol>
-<li>打开<code>Preferences</code>=&gt;<code>project</code>=&gt;<code>project interpreter</code>路径下的设置，如下<br><img src="/images/pasted-8.png" alt="upload successful"></li>
-<li>添加<code>Python Interpreter</code>选择<code>System Interpreter</code>，进行选择对应的<code>python</code>版本，如下<br><img src="/images/pasted-9.png" alt="upload successful"></li>
-<li>选择<code>pyenv</code>路径为<code>~/.pyenv/versions/&lt;version&gt;/bin/python</code></li>
-</ol>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -639,10 +403,8 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/04/17/Scrapy-Newspaper-mongodb/" class="post-title-link" itemprop="url">Scrapy + Newspaper + mongodb 进行爬取新闻网站</a>
+          <h2 class="post-title" itemprop="name headline">Scrapy + Newspaper + mongodb 进行爬取新闻网站
+
               
             
           </h2>
@@ -751,9 +513,7 @@
       
 
       
-        
-          
-            <h3 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h3><h4 id="安装mongodb"><a href="#安装mongodb" class="headerlink" title="安装mongodb"></a>安装mongodb</h4><p>本人比较喜欢使用<code>docker</code>进行搭建本地环境，所以这边我就直接介绍<code>docker</code>搭建<code>mongodb</code></p>
+        <h3 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h3><h4 id="安装mongodb"><a href="#安装mongodb" class="headerlink" title="安装mongodb"></a>安装mongodb</h4><p>本人比较喜欢使用<code>docker</code>进行搭建本地环境，所以这边我就直接介绍<code>docker</code>搭建<code>mongodb</code></p>
 <ol>
 <li><p>查看是否已安装<code>docker</code>和<code>docker-compose</code>，如下</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ docker -v</span><br><span class="line">Docker version 18.09.1, build 4c52b90</span><br><span class="line">$ docker-compose -v</span><br><span class="line">docker-compose version 1.23.2, build 1110ad01</span><br></pre></td></tr></table></figure>
@@ -813,8 +573,6 @@
 </ol>
 <p>进行连接mongodb，并进行存储数据</p>
 
-          
-        
       
     </div>
 
@@ -835,244 +593,42 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://lovejin52022.github.io/2019/04/16/mac-hexo/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="jin zeng">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mr 曾 Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/04/16/mac-hexo/" class="post-title-link" itemprop="url">Mac + Hexo + next主题个人博客搭建</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-04-16 10:40:00" itemprop="dateCreated datePublished" datetime="2019-04-16T10:40:00+08:00">2019-04-16</time>
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a></span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/python/" rel="tag"><i class="fa fa-tag"></i> python</a>
           
-
+            <a href="/tags/scrapy/" rel="tag"><i class="fa fa-tag"></i> scrapy</a>
           
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/04/16/mac-hexo/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/04/16/mac-hexo/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-            <span id="/2019/04/16/mac-hexo/" class="leancloud_visitors" data-flag-title="Mac + Hexo + next主题个人博客搭建">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读次数：</span>
-              
-                <span class="leancloud-visitors-count"></span>
-            </span>
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>简单介绍一下 Mac 下  Hexo + next + github pages 搭建个人博客。</p>
-<h2 id="新建-github-pages"><a href="#新建-github-pages" class="headerlink" title="新建 github pages"></a>新建 github pages</h2><h3 id="创建github账号"><a href="#创建github账号" class="headerlink" title="创建github账号"></a>创建<a href="https://github.com/" target="_blank" rel="noopener">github</a>账号</h3><p>Github pages 功能是基于 github的，所以首先需要有一个[github]<br><img src="/images/pasted-0.png" alt="upload successful"><br>登录首页注册账号，并通过邮箱验证</p>
-<h3 id="新建一个-git-仓库"><a href="#新建一个-git-仓库" class="headerlink" title="新建一个 git 仓库"></a>新建一个 git 仓库</h3><p><img src="/images/pasted-7.png" alt="upload successful"><br>新建仓库名称为 <strong>「<code>name.github.io</code>」</strong> 的仓库名称进行创建。<br>创建完成后，设置仓库的 <strong>github pages</strong> 功能<br>进入settings:<br><img src="/images/pasted-2.png" alt="upload successful"><br><img src="/images/pasted-3.png" alt="upload successful"><br>设置成功后显示如下：<br><img src="/images/pasted-4.png" alt="upload successful"></p>
-<h2 id="Hexo本地环境的搭建"><a href="#Hexo本地环境的搭建" class="headerlink" title="Hexo本地环境的搭建"></a>Hexo本地环境的搭建</h2><h3 id="1-安装Node-js和Git"><a href="#1-安装Node-js和Git" class="headerlink" title="1. 安装Node.js和Git"></a>1. 安装Node.js和Git</h3><p>Mac上安装可以选择图形化方式和终端安装，此处直接使用客户端方式安装。Node.js官网下载文件，根据提示安装即可，安装成功后在目录<code>/usr/local/bin</code>目录下。测试Node.js和npm，出现下述信息则安装成功。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ node -v</span><br><span class="line">v10.8.0</span><br><span class="line">$ npm -v</span><br><span class="line">6.2.0</span><br><span class="line">$ git --version</span><br><span class="line">git version 2.20.1 (Apple Git-117)</span><br></pre></td></tr></table></figure></p>
-<h3 id="2-安装Hexo"><a href="#2-安装Hexo" class="headerlink" title="2. 安装Hexo"></a>2. 安装Hexo</h3><p>Node.js和Git都安装成功后开始安装Hexo。安装时注意权限问题，加上sudo，其中-g表示全局安装。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install -g hexo</span><br></pre></td></tr></table></figure></p>
-<h3 id="3-初始化博客项目"><a href="#3-初始化博客项目" class="headerlink" title="3. 初始化博客项目"></a>3. 初始化博客项目</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init myblog</span><br></pre></td></tr></table></figure>
-<p>安装npm依赖<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> myblog</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure></p>
-<p>安装<a href="https://github.com/hexojs/hexo-deployer-git" target="_blank" rel="noopener">hexo-deployer-git</a>，用于发布博客到github pages。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
-<p>执行下述命令开启服务器，然后通过<code>http://localhost:4000</code>查看本地博客。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure></p>
-<p><img src="/images/pasted-6.png" alt="upload successful"></p>
-<h3 id="4-安装-NexT"><a href="#4-安装-NexT" class="headerlink" title="4. 安装 NexT"></a>4. 安装 NexT</h3><p>Hexo 安装主题的方式非常简单，只需要将主题文件拷贝至站点目录的 themes 目录下， 然后修改下配置文件即可。具体到 NexT 来说，安装步骤如下。<br>在终端窗口下，定位到 <code>Hexo 站点目录</code>下。使用 Git checkout 代码：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> your-hexo-site</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure></p>
-<p>启用主题，打开 <code>Hexo 站点目录/_config.yml</code>，编辑对应的主题为 <code>theme: next</code>。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: next</span><br></pre></td></tr></table></figure></p>
-<p>验证主题<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure></p>
-<p><img src="/images/pasted-5.png" alt="upload successful"></p>
-<h2 id="配置-Hexo-和-NexT-主题"><a href="#配置-Hexo-和-NexT-主题" class="headerlink" title="配置 Hexo 和 NexT 主题"></a>配置 Hexo 和 NexT 主题</h2><h3 id="设置语言"><a href="#设置语言" class="headerlink" title="设置语言"></a>设置语言</h3><p>打开 <code>Hexo 站点目录/_config.yml</code> ， 将 language 设置成你所需要的语言。配置如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">language: zh-CN</span><br><span class="line">timezone:</span><br></pre></td></tr></table></figure></p>
-<p>language 的设置需要参照<code>Hexo 站点目录/themes/next/languages</code>目录下的语言配置文件。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── languages</span><br><span class="line">	├── zh-CN.yaml</span><br><span class="line">	├── zh-HK.yaml</span><br><span class="line">	└── zh-TW.yaml</span><br><span class="line">├── layout</span><br><span class="line">├── scripts</span><br><span class="line">└── source</span><br></pre></td></tr></table></figure></p>
-<h3 id="设置主题Schema"><a href="#设置主题Schema" class="headerlink" title="设置主题Schema"></a>设置主题Schema</h3><p>Scheme 是 NexT 提供的一种特性，借助于 Scheme，NexT 为你提供多种不同的外观。同时，几乎所有的配置都可以 在 Scheme 之间共用。目前 NexT 支持三种 Scheme，他们是：</p>
-<ul>
-<li>Muse - 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白</li>
-<li>Mist - Muse 的紧凑版本，整洁有序的单栏外观</li>
-<li>Pisces - 双栏 Scheme，小家碧玉似的清新</li>
-</ul>
-<p>Scheme 的切换通过更改<code>Hexo 站点目录/themes/next/_config.yml</code>，搜索 scheme 关键字。 你会看到有三行 scheme 的配置，将你需用启用的 scheme 前面注释 <code>#</code> 去除即可。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Schemes</span></span><br><span class="line"><span class="comment"># scheme: Muse</span></span><br><span class="line"><span class="comment">#scheme: Mist</span></span><br><span class="line">scheme: Pisces</span><br><span class="line"><span class="comment"># scheme: Gemini</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="设置菜单"><a href="#设置菜单" class="headerlink" title="设置菜单"></a>设置菜单</h3><p>菜单配置包括三个部分，第一是菜单项（名称和链接），第二是菜单项的显示文本，第三是菜单项对应的图标。 NexT 使用的是 Font Awesome 提供的图标， Font Awesome 提供了 600+ 的图标，可以满足绝大的多数的场景，同时无须担心在 Retina 屏幕下 图标模糊的问题。<br>编辑 <code>Hexo 站点目录/themes/next/_config.yml</code>，修改以下内容，以添加<code>tags</code>和<code>categories</code>为例<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 以下菜单均是系统默认的，如需增加自己的菜单页面，建议另起一行</span></span><br><span class="line">menu:</span><br><span class="line">  home: / || home</span><br><span class="line">  archives: /archives/ || archive</span><br><span class="line">  <span class="comment">#about: /about/ || user</span></span><br><span class="line">  tags: /tags/ || tags</span><br><span class="line">  categories: /categories/ || th</span><br><span class="line">  <span class="comment">#schedule: /schedule/ || calendar</span></span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || sitemap</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || heartbeat</span></span><br></pre></td></tr></table></figure></p>
-<p>执行以下page的语法：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page <span class="string">'tags'</span></span><br><span class="line">$ hexo new page <span class="string">'categories'</span></span><br></pre></td></tr></table></figure></p>
-<p>修改<code>Hexo 站点目录/source/tags/index.md</code>文件，新增<code>type</code>属性，如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 标签</span><br><span class="line">date: 2019-04-15 21:53:10</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
-<p>categories的修改类似</p>
-<h3 id="设置-侧栏"><a href="#设置-侧栏" class="headerlink" title="设置 侧栏"></a>设置 侧栏</h3><p>默认情况下，侧栏仅在文章页面（拥有目录列表）时才显示，并放置于右侧位置。 可以通过修改 <code>Hexo 站点目录/themes/next/_config.yml</code>中的<code>sidebar</code>字段来控制侧栏的行为。侧栏的设置包括两个部分，其一是侧栏的位置， 其二是侧栏显示的时机。</p>
-<ol>
-<li>设置侧栏的位置，修改 <code>sidebar.position</code> 的值，支持的选项有:</li>
-</ol>
-<ul>
-<li>left - 靠左放置</li>
-<li>right - 靠右放置<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sidebar:</span><br><span class="line">  position: left</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<ol start="2">
-<li>设置侧栏显示的时机，修改 <code>sidebar.display</code> 的值，支持的选项有：</li>
-</ol>
-<ul>
-<li>post - 默认行为，在文章页面（拥有目录列表）时显示</li>
-<li>always - 在所有页面中都显示</li>
-<li>hide - 在所有页面中都隐藏（可以手动展开）</li>
-<li>remove - 完全移除<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sidebar:</span><br><span class="line">  display: post</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="设置-头像"><a href="#设置-头像" class="headerlink" title="设置 头像"></a>设置 头像</h3><p>编辑 <code>Hexo 站点目录/themes/next/_config.yml</code>，修改字段<code>avatar</code>，头像链接可以是：<br>地址     | 值<br>:———: | :———<br>完整的互联网 URI  | <a href="http://example.com/avatar.png" target="_blank" rel="noopener">http://example.com/avatar.png</a><br>站点内的地址  | 将头像放置主题目录下的 source/uploads/ （新建 uploads 目录若不存在）<br>||配置为：avatar: /uploads/avatar.png<br>||或者 放置在 source/images/ 目录下<br>||配置为：avatar: /images/avatar.png<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">avatar: http://example.com/avatar.png</span><br></pre></td></tr></table></figure></p>
-<h2 id="部署上线"><a href="#部署上线" class="headerlink" title="部署上线"></a>部署上线</h2><p>在开始之前，您必须先在 <code>Hexo 站点目录/_config.yml</code>中修改参数，如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line">deploy:</span><br><span class="line">  repository: https://github.com/lovejin52022/jzeng.github.io.git</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
-<p>Hexo 提供了快速方便的一键部署功能。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></p>
-<p>如果未验证repository，执行时需验证邮箱和密码</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/04/16/mac-hexo/" rel="next" title="Mac + Hexo + next主题个人博客搭建">
+                <i class="fa fa-chevron-left"></i> Mac + Hexo + next主题个人博客搭建
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/04/17/使用pyenv管理python环境/" rel="prev" title="使用pyenv管理python环境">
+                使用pyenv管理python环境 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
       
     </footer>
   </div>
@@ -1082,14 +638,19 @@
   </article>
 
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+
+  
+
+
 
         </div>
         
@@ -1109,8 +670,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1226,6 +796,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#环境配置"><span class="nav-number">1.</span> <span class="nav-text">环境配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装mongodb"><span class="nav-number">1.1.</span> <span class="nav-text">安装mongodb</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装-scrapy-应用框架"><span class="nav-number">1.2.</span> <span class="nav-text">安装 scrapy 应用框架</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装-Newspaper-依赖包"><span class="nav-number">1.3.</span> <span class="nav-text">安装 Newspaper 依赖包</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#scrapy教程"><span class="nav-number">2.</span> <span class="nav-text">scrapy教程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#创建scrapy项目"><span class="nav-number">2.1.</span> <span class="nav-text">创建scrapy项目</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#定义Item"><span class="nav-number">2.2.</span> <span class="nav-text">定义Item</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#爬虫编写"><span class="nav-number">2.3.</span> <span class="nav-text">爬虫编写</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Newspaper-解析新闻"><span class="nav-number">2.4.</span> <span class="nav-text">Newspaper 解析新闻</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Item-Pipeline-处理存储数据"><span class="nav-number">2.5.</span> <span class="nav-text">Item Pipeline 处理存储数据</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -1408,6 +995,10 @@
 
 
   
+  <script src="/js/scrollspy.js?v=7.1.0"></script>
+<script src="/js/post-details.js?v=7.1.0"></script>
+
+
 
   
 
@@ -1453,6 +1044,8 @@
 
 
 
+
+  
 
 
   
