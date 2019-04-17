@@ -777,7 +777,7 @@ pre .javascript .function {
   margin-bottom: 20px;
   border: 1px solid #eee;
   border-left-width: 5px;
-  border-radius: 3px;
+  border-radius: 32px;
 }
 .post-body .note h2,
 .post-body .note h3,
@@ -889,6 +889,10 @@ pre .javascript .function {
   border-top: 3px solid transparent;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
+  border-radius: 20px 20px 0 0;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
 }
 @media (max-width: 413px) {
   .post-body .tabs ul.nav-tabs li.tab {
@@ -897,6 +901,11 @@ pre .javascript .function {
     border-left: 3px solid transparent;
     border-right: 1px solid transparent;
     border-bottom: 1px solid transparent;
+  }
+}
+@media (max-width: 413px) {
+  .post-body .tabs ul.nav-tabs li.tab {
+    border-radius: 20px;
   }
 }
 .post-body .tabs ul.nav-tabs li.tab a {
@@ -936,12 +945,21 @@ pre .javascript .function {
 .post-body .tabs .tab-content .tab-pane {
   border: 1px solid #ddd;
   padding: 20px 20px 0 20px;
+  border-radius: 20px;
 }
 .post-body .tabs .tab-content .tab-pane:not(.active) {
   display: none;
 }
 .post-body .tabs .tab-content .tab-pane.active {
   display: block;
+}
+.post-body .tabs .tab-content .tab-pane.active:nth-of-type(1) {
+  border-radius: 0 20px 20px 20px;
+}
+@media (max-width: 413px) {
+  .post-body .tabs .tab-content .tab-pane.active:nth-of-type(1) {
+    border-radius: 20px;
+  }
 }
 .btn {
   display: inline-block;
@@ -1835,7 +1853,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #65d1ff;
+  background: #1747ff;
 }
 .feed-link,
 .chat {
@@ -2454,7 +2472,7 @@ ul.breadcrumb li+li:last-child {
   width: 240px;
   background: #fff;
   box-shadow: initial;
-  border-radius: initial;
+  border-radius: 20px;
 }
 @media (min-width: 1200px) {
   .container .header-inner {
@@ -2465,7 +2483,7 @@ ul.breadcrumb li+li:last-child {
   .header-inner {
     position: relative;
     width: auto;
-    border-radius: initial;
+    border-radius: 20px;
   }
 }
 .main:before,
@@ -2489,13 +2507,13 @@ ul.breadcrumb li+li:last-child {
   background: #fff;
   min-height: 700px;
   box-shadow: initial;
-  border-radius: initial;
+  border-radius: 20px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .content-wrap {
     width: 100%;
     padding: 20px;
-    border-radius: initial;
+    border-radius: 20px;
   }
 }
 @media (max-width: 767px) {
@@ -2503,7 +2521,7 @@ ul.breadcrumb li+li:last-child {
     width: 100%;
     padding: 20px;
     min-height: auto;
-    border-radius: initial;
+    border-radius: 20px;
   }
 }
 .sidebar {
@@ -2703,7 +2721,7 @@ ul.breadcrumb li+li:last-child {
   color: #555;
   background: #fff;
   box-shadow: initial;
-  border-radius: initial;
+  border-radius: 20px;
   opacity: 0;
 }
 .sidebar-inner.affix {
@@ -2831,10 +2849,7 @@ ul.breadcrumb li+li:last-child {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.post {
-  margin-top: 60px;
-  margin-bottom: 60px;
-  padding: 25px;
-  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
-  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+.posts-expand .post-eof {
+  margin: 0px;
+  background-color: rgba(255,255,255,0);
 }
